@@ -11,6 +11,9 @@ namespace AgendaDiniz
     class DAO
     {
         public MySqlConnection conexao;//Conectar ao banco de dados
+        public string[] login;
+        public string[] senha;
+        public int i;
         public DAO()
         {
             conexao = new MySqlConnection("server=localhost;DataBase=agendaDiniz;Uid=root;Password=");
@@ -25,8 +28,15 @@ namespace AgendaDiniz
                 conexao.Close();//Fechandop a conexão com o BD
             }//Fim tryCatch
 
-        }//FIm do método
+            i = 0;
+        }//Fim do método
 
+        //Método inserir
+
+        public void inserir(string login, string senha)
+        {
+
+        }//Fim do método
 
     }//Fim da classe
 }//Fim do projeto

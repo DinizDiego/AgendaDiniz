@@ -95,7 +95,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlMain.cs" />
     <Compile Include="ControlUsuario.cs" />
+    <Compile Include="DAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
